@@ -2,8 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
-
+  final VoidCallback registerPage;
+  const LoginPage({Key? key, required this.registerPage}) : super(key: key);
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
@@ -151,18 +151,21 @@ class _LoginPageState extends State<LoginPage> {
                 // Register Now
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text(
+                  children: [
+                    const Text(
                       'Not a member?',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(
-                      ' Register now !',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold,
+                    GestureDetector(
+                      onTap: widget.registerPage,
+                      child: const Text(
+                        ' Register now !',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],
