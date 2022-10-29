@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826059382509",
+    "project_id": "signin-flutter-ca522",
+    "storage_bucket": "signin-flutter-ca522.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826059382509:android:d005c93842d76ace1676e4",
+        "android_client_info": {
+          "package_name": "com.hardiksjain.signin_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826059382509-vv2au6hbgeaf4r32tmgr5b1ruk7jvbmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS76CVBssQIPU_sY5pRIg66SlTqzguv9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826059382509-vv2au6hbgeaf4r32tmgr5b1ruk7jvbmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
